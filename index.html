@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url(style.css);
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+        }
+
+        /* Buttons */
+        .modal button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .modal button:hover {
+            background-color: #ddd;
+        }
+    </style>
+    <script>
+        // JavaScript per gestire l'apertura e la chiusura del menu a discesa
+        function toggleDropdown() {
+            var dropdown = document.querySelector('.Progetti');
+            dropdown.classList.toggle('show');
+        }
+
+        // JavaScript per mostrare il modal
+        function f1() {
+            var modal = document.getElementById("languageModal");
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("languageModal");
+            modal.style.display = "none";
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('englishButton').addEventListener('click', function() {
+                alert('Whoever moves first is gay');
+                closeModal();
+            });
+
+            document.getElementById('spanishButton').addEventListener('click', function() {
+                alert('El primero en moverse es gay');
+                closeModal();
+            });
+        });
+    </script>
+</head>
+<!-- Inserire un immagine di sfondo tipo viola conle bolle -->
+<body class="index" background="snapedit_1717436247387.jpeg">
+    <div class="navbar">
+
+
+        <!--I progetti col copia incolla fatto in da c# a js-->
+        <!--Qui metti al click un menu a discesa che gli fa scegliere tra programmi
+            siti e video editing, poi metti la struttura uguale a tutti
+            e ad ogni pagina con uno dei progetti c'è sempre anche il menu a
+            tendina di progetti-->
+        <div class="menu">
+            <button class="btnProgetti" style="background-color: transparent; border: none; color: white;" onclick="toggleDropdown()">Progetti</button>
+            <div class="Progetti" style="background-color: white; color: black;">
+                <div><a href="programmi.html" style="color: black;">Programmi</a></div>
+                <div><a href="siti.html" style="color: black;">Siti</a></div>
+                <div><a href="videoEditing.html" style="color: black;">Video Editing</a></div>
+            </div>
+        </div>
+        <!--Instagram, YT, Discord, TG(se riesci)-->
+        <!--Mail-->
+        <button style="background-color: transparent; border:0 none; color: white; margin-bottom: 2%; margin-left: 5%;"><div style="display: inline-block;"><a href="contatti.html" class="link">Contatti</a></div></button>
+        <button style="background-color: transparent; border:0 none; color: white; margin-bottom: 2%; margin-left: 10%;"><div style="display: inline-block;"><a href="https://www.itis.biella.it" class="link">La mia scuola</a></div></button>
+        <button class="" style="background-color: transparent; border:0 none; color: white; margin-bottom: 2%; margin-left: 10%;" onclick="f1()"><div>Spicy</div></button>
+    </div>
+    <div id="languageModal" class="modal">
+        <div class="modal-content">
+            <p>English or Spanish?</p>
+            <button id="englishButton">English</button>
+            <button id="spanishButton">Spanish</button>
+        </div>
+    </div>
+</body>
+</html>

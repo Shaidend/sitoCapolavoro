@@ -1,0 +1,790 @@
+body.index {
+    background-image: url('pikaso_texttoimage_Limmagine-animata-si-apre-su-uno-sfondo-scuro-quas\ \(1\).jpeg'); /* Sostituisci 'percorso_dell_immagine.jpg' con il percorso dell'immagine che vuoi utilizzare */
+    background-size: cover; /* Per fare in modo che l'immagine copra l'intero sfondo */
+    background-position:inherit; /* Per posizionare l'immagine al centro del background */
+    background-repeat: no-repeat; /* Per evitare la ripetizione dell'immagine */
+    height: 100vh;
+}
+.navbar{
+      display: flex;
+      border: 1px none;
+      width: 50%; /*In caso prova con il 70%*/
+      height: 40vh;
+      margin-left: 25%;/*Poi se metti width 70% cambia questo a 15%*/
+      margin-top: 15%;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: -50px;
+      opacity: 0;
+      animation: appearFromLeft 4s forwards;
+}
+a.link{
+      text-decoration:none;
+      color: bali;
+}
+a.link:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.navbar > div{
+      border: 1px none;
+      width: 20%;
+      height: 10%;
+      text-align: center;
+}
+@keyframes appearFromLeft {
+    0% {
+      left: -100px; /* Parte da fuori dalla container a sinistra */
+      opacity: 0; /* Il div è invisibile */
+    }
+    50% {
+      left: calc(5% - 10px); /* Si sposta al centro */
+      opacity: 1; /* Il div diventa visibile */
+    }
+    100% {
+        left: calc(5% - 10px); /* Rimane al centro */
+        opacity: 1; /* Il div rimane visibile */
+      }
+}
+
+
+.Progetti {
+    display: none;
+    position: absolute;
+    background-color: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.Progetti a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+.btnProgetti{
+    background-color: trasparent;
+}
+
+.menu:active .Progetti {
+    display: block;
+    position: absolute;
+}
+.show {
+    display: block !important;
+}
+
+
+
+/*Progetti*/
+
+body {
+  background-color: var(--site-header-bg, #27282c);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  margin: 0%;
+}
+
+.navbar1 {
+  display: flex;
+  background-color: trasparent;
+  border: 1px none;
+  width: 90%; /*In caso prova con il 70%*/
+  height: 15vh; /*Poi se metti width 70% cambia questo a 15%*/
+  margin-left: 0%;
+  margin-top: 0%;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: -50px;
+  opacity: 0;
+  animation: appearFromLeft 4s forwards;
+}
+
+.navbar1 > div {
+  border: 1px none;
+  width: 25%;
+  height: 20%;
+  text-align: center;
+}
+
+a.link {
+  text-decoration: wavy;
+  color: white;
+}
+
+a.link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Bottone view more */
+.cta {
+  margin-left: 15%;
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #084453;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #aab5c0;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #aab5c0;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #084453;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+a {
+  text-decoration: none;
+  color: #aab5c0;
+}
+
+.divPrincipale {
+  display: inline;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  height: 200vh;
+}
+
+.mainContainer {
+  display: flex;
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 90%;
+  height: 100%;
+  border: 1px none;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.blockContainer {
+  display: flex;
+  width: 90%;
+  height: 90%;
+  justify-content: space-evenly;
+  border: 1px none;
+}
+
+.firstBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  border: 4px none;
+  width: 30%;
+  height: 80%;
+}
+
+.firstBlock > div {
+  margin-left: 5%;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 30%;
+  border: 1px solid;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  transition: 0.5s;
+  box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+}
+
+.block:hover {
+  filter: brightness(110%);
+  transform: translateY(-6px);
+}
+
+.block > div:nth-child(1) {
+  backdrop-filter: blur(10px); /* Applica lo sfondo sfocato */
+  z-index: -1; /* Assicura che lo sfondo sfocato sia dietro il contenuto del div */
+  height: 100%; /* Modifica per occupare tutto lo spazio disponibile */
+  margin-top: 0%; /* Rimuovi il margine superiore */
+}
+
+.block img {
+  width: 100%; /* Assicura che l'immagine occupi tutta la larghezza */
+  height: 100%; /* Assicura che l'immagine occupi tutta l'altezza */
+  object-fit: cover; /* L'immagine coprirà l'intero spazio senza distorsioni */
+  margin-top: 0%; /* Rimuovi il margine superiore */
+  border: 2px none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: black;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.block > div:nth-child(2) {
+  margin-top: 60%;
+  width: 100%;
+  height: 55%;
+  text-align: center;
+  border: 1px none;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  border-bottom-color: transparent;
+}
+
+.button {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+
+/*Modulo contatti*/
+
+.moduloContatti{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    margin-top: 8%;
+    border: 1px none;
+    border-color: white;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.moduloContatti > div{
+    display: flex;
+    width: 90%;
+    height: 90%;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+}
+.moduloContatti > div > h1{
+    margin-right: 12.8%;
+}
+
+.form-container {
+    width: 400px;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  .wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: transparent;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: white;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: white;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+  
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background: #ff0000;
+    color: #fff;
+  }
+  
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background: #333;
+    color: #fff;
+  }
+  
+  .wrapper .gmail:hover,
+  .wrapper .gmail:hover .tooltip,
+  .wrapper .gmail:hover .tooltip::before {
+    background: #d44638;
+    color: #fff;
+  }
+
+  .Progetti div:hover{
+    background-color: #717171;
+  }
+  
+  
+  
+  
+
+
+@media (max-width: 480px) {
+
+    /*Index*/
+    body.index{
+        background-image: url('pikaso_texttoimage_Limmagine-animata-si-apre-su-uno-sfondo-scuro-quas\ \(1\).jpeg'); /* Sostituisci 'percorso_dell_immagine.jpg' con il percorso dell'immagine che vuoi utilizzare */
+        background-size: cover; /* Per fare in modo che l'immagine copra l'intero sfondo */
+        background-position:inherit; /* Per posizionare l'immagine al centro del background */
+        background-repeat: no-repeat; /* Per evitare la ripetizione dell'immagine */
+        height: 100vh;
+    }
+    .navbar {
+        width: 80%;
+        height: 100vh;
+        margin-left: 10%;
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        opacity: 1;
+    }
+
+    .navbar > div {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    a.link {
+        font-size: 1.2em;
+    }
+    
+    
+    /* CSS per dispositivi mobili */
+    .Progetti {
+        position: static;
+        display: block;
+        background-color: transparent;
+        border: none;
+        border-color: transparent;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .Progetti a {
+        display: block;
+        border-bottom: 1px none #ccc;
+    }
+
+    .contact-links {
+        transition: margin-top 0.5s;
+    }
+
+    .push-down {
+        margin-top: 60px; /* Sposta gli elementi verso il basso */
+    }
+
+
+    /*Progetti*/
+    .navbar1 {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        left: -5%;
+        top: 0;
+        animation: none;
+        opacity: 1;
+    }
+
+    .navbar1 > div {
+        width: auto;
+        height: auto;
+    }
+
+    .cta {
+        margin-left: 0;
+        padding: 10px 15px;
+    }
+
+    .cta span {
+        font-size: 16px;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        margin-top: 20%;
+        height: auto;
+        position: relative;
+    }
+
+    .blockContainer {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .firstBlock {
+        width: 80%;
+        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .firstBlock > div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .block {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .button {
+        width: 100%;
+        margin-left: -20%;
+        margin-top: 10px;
+    }
+
+    .blockContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .firstBlock {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+
+    /*btn progetti*/
+    .menu {
+        position: relative;
+        display: inline-block;
+    }
+    .btnProgetti{
+        background-color: transparent; border: none; color: white;
+
+    }
+    .Progetti{
+        display: none;
+    }
+    
+    .menu:active .Progetti {
+        display: block;
+        position: absolute;
+    }
+    
+    .show {
+        display: block !important;
+    }
+
+    /*Contatti*/
+
+    
+    .moduloContatti > div > h1{
+        margin-right: 50.8%;
+    }
+
+
+    .form-container {
+        width: 400px;
+        background: linear-gradient(#212121, #212121) padding-box,
+                    linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+        border: 2px solid transparent;
+        padding: 32px 24px;
+        font-size: 14px;
+        font-family: inherit;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+        border-radius: 16px;
+      }
+      
+      
+      .form-container button:active {
+        scale: 0.95;
+      }
+      
+      .form-container .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .form-container .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+      
+      .form-container .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #717171;
+        font-weight: 600;
+        font-size: 12px;
+      }
+      
+      .form-container .form-group input {
+        width: 90%;
+        padding: 12px 16px;
+        border-radius: 8px;
+        color: #fff;
+        font-family: inherit;
+        background-color: transparent;
+        border: 1px solid #414141;
+      }
+      
+      .form-container .form-group textarea {
+        width: 90%;
+        padding: 12px 16px;
+        border-radius: 8px;
+        resize: none;
+        color: #fff;
+        height: 96px;
+        border: 1px solid #414141;
+        background-color: transparent;
+        font-family: inherit;
+      }
+      
+      .form-container .form-group input::placeholder {
+        opacity: 0.5;
+      }
+      
+      .form-container .form-group input:focus {
+        outline: none;
+        border-color: #e81cff;
+      }
+      
+      .form-container .form-group textarea:focus {
+        outline: none;
+        border-color: #e81cff;
+      }
+      
+      .form-container .form-submit-btn {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: flex-start;
+        font-family: inherit;
+        color: #717171;
+        font-weight: 600;
+        width: 40%;
+        background: #313131;
+        border: 1px solid #414141;
+        padding: 12px 16px;
+        font-size: inherit;
+        gap: 8px;
+        margin-top: 8px;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+      
+      .form-container .form-submit-btn:hover {
+        background-color: #fff;
+        border-color: #fff;
+      }
+}
